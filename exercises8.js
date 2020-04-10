@@ -6,11 +6,8 @@ function tukarBesarKecil(kalimat) {
     var lowercase = kalimat[i].toLowerCase();
     if (kalimat[i] === uppercase) {
       tampung = tampung + lowercase;
-    } else 
-    if (kalimat[i] === lowercase) {
-      tampung = tampung + uppercase;
     } else {
-      tampung = tampung + kalimat[i];
+      tampung = tampung + uppercase;
     }
   }
   return tampung;

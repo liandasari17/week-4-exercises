@@ -1,7 +1,7 @@
 function cariModus(arr) {
     var tampung = []
-    for(i=0; i<arr.length; i++){
-      for(j=0; j< arr.length; j++){
+    for(var i=0; i<arr.length; i++){
+      for(var j=0; j< arr.length; j++){
         if(arr[j] > arr[j+1]){
           temp= arr[j+1]
           arr[j+1] = arr[j]
@@ -10,7 +10,7 @@ function cariModus(arr) {
       }
     }
     //console.log(arr)
-    for(k=0; k<arr.length; k++){
+    for(var k=0; k<arr.length; k++){
       if(arr[k] === arr[k+1]){
         tampung.push(arr[k])
       } 
