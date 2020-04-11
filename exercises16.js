@@ -1,7 +1,7 @@
 function graduates (students) {
     var objresult = {};
     for (var i in students) {
-      if (students == 0) {
+      if (students.length == 0) {
         return objresult
       } else {
         if (!objresult[students[i].class]) {
